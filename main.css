@@ -9,7 +9,8 @@
   }
 
   p {
-   color: #33a8ff;
-   text-align: right;
-   border: 3px dotted #ff008d;
-  }
+ padding: 20px;
+ color: #33a8ff;
+ text-align: center;
+ border: 3px dotted #ff008d;
+}
