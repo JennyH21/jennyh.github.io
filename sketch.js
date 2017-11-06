@@ -6,11 +6,11 @@
           capture = createCapture(VIDEO);
           capture.size(320, 240);
           capture.hide();
-          filter('INVERT');
+          centerCanvas();
          }
 
-          //function draw() {
-        //  background(255);
-        //  image(capture, 0, 0, 320, 240);
-          //filter('INVERT');
-      //  }
+          function draw() {
+          background(255);
+          image(capture, 0, 0, 320, 240);
+          filter('INVERT');
+     }
