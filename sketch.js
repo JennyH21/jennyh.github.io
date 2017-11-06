@@ -6,7 +6,6 @@
           capture = createCapture(VIDEO);
           capture.size(320, 240);
           capture.hide();
-          centerCanvas();
          }
 
           function draw() {
