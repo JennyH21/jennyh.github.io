@@ -15,70 +15,12 @@
       font-family: 'Cinzel', serif;
     }
 
-    @import "compass/css3";
-
-body{
-  background:black;
-  font-family: 'Varela', sans-serif;
-}
-
-.doll{
-  color:white;
-  font-size:100px;
-  position:relative;
-  width:400px;
-  margin:0 auto;
-}
-@keyframes noise-anim{
-  $steps:20;
-  @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
-    }
-  }
-}
-.doll:after{
-  content:attr(data-text);
-  position:absolute;
-  left:2px;
-  text-shadow:-1px 0 red;
-  top:0;
-  color:white;
-  background:black;
-  overflow:hidden;
-  clip:rect(0,900px,0,0);
-  animation:noise-anim 2s infinite linear alternate-reverse;
-}
-
-@keyframes noise-anim-2{
-  $steps:20;
-  @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
-    }
-  }
-}
-.doll:before{
-  content:attr(data-text);
-  position:absolute;
-  left:-2px;
-  text-shadow:1px 0 blue;
-  top:0;
-  color:white;
-  background:black;
-  overflow:hidden;
-  clip:rect(0,900px,0,0);
-  animation:noise-anim-2 3s infinite linear alternate-reverse;
-}
-
-
 
     </style>
   </head>
   <body>
 
 
-  <div class="doll" data-text="doll">It all began with the Doll...</div>
 
     <center><font color="red"><h1>It all began with the doll.</h1></font></center>
     <center><font color="white"><font size="+3"><p>On Christmas day, Lily was given a present from her grandmother. Wrapped in
