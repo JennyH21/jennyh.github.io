@@ -60,9 +60,33 @@
           <center><font color="white"><font size="+3"><p>At first, everything was normal. But suddenly, she began to hear footsteps and a child’s laugh echo throughout the house.</p></font></font></center>
 
           <center>
-          <audio
+
+            <audio id="sample" src="jennyh21.github.io/creepychildlaughwithfootsteps.mp3" controls preload></audio>
+
+            <a href="javascript:playSegment(0.0, 0.5);">Play1</a>
+            <a href="javascript:playSegment(0.5);">Play2</a>
+
+            <script>
+            var audio = document.getElementById('sample');
+            var segmentEnd;
+
+            audio.addEventListener('timeupdate', function (){
+                if (segmentEnd && audio.currentTime >= segmentEnd) {
+                    audio.pause();
+                }
+                console.log(audio.currentTime);
+            }, false);
+
+            function playSegment(startTime, endTime){
+                segmentEnd = endTime;
+                audio.currentTime = startTime;
+                audio.play();
+            }
+            </script>
+
+        <!--  <audio
                src="jennyh21.github.io/creepychildlaughwithfootsteps.mp3" >
-            </audio>
+            </audio> -->
 
 </center>
 
