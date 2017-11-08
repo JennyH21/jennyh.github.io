@@ -2,15 +2,15 @@
           var capture;
 
           function setup() {
-          createCanvas(390, 240);
+          createCanvas(400, 400);
           capture = createCapture(VIDEO);
-          capture.size(320, 240);
+          capture.size(400, 400);
           capture.hide();
          }
 
           function draw() {
           background(255);
-          image(capture, 0, 0, 320, 240);
+          image(capture, 0, 0, 400, 400);
           filter('INVERT');
      }
 
