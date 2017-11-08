@@ -43,5 +43,3 @@
 
      window.addEventListener('scroll', checkScroll, false);
      window.addEventListener('resize', checkScroll, false);
-
-  
