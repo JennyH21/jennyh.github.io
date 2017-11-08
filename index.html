@@ -61,32 +61,10 @@
 
           <center>
 
-            <audio id="sample" src="jennyh21.github.io/creepychildlaughwithfootsteps.mp3" controls preload></audio>
 
-            <a href="javascript:playSegment(0.0, 0.5);">Play1</a>
-            <a href="javascript:playSegment(0.5);">Play2</a>
-
-            <script>
-            var audio = document.getElementById('sample');
-            var segmentEnd;
-
-            audio.addEventListener('timeupdate', function (){
-                if (segmentEnd && audio.currentTime >= segmentEnd) {
-                    audio.pause();
-                }
-                console.log(audio.currentTime);
-            }, false);
-
-            function playSegment(0, 10){
-                segmentEnd = 10;
-                audio.currentTime = 0;
-                audio.play();
-            }
-            </script>
-
-        <!--  <audio
+<audio
                src="jennyh21.github.io/creepychildlaughwithfootsteps.mp3" >
-            </audio> -->
+            </audio>
 
 </center>
 
